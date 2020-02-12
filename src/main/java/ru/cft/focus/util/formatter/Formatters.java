@@ -5,7 +5,10 @@ import java.io.BufferedWriter;
 import java.io.EOFException;
 import java.io.IOException;
 
-public class Formatters {
+public final class Formatters {
+    private Formatters() {
+    }
+
     public static Formatter<String> stringFormatter() {
         return new Formatter<String>() {
             @Override

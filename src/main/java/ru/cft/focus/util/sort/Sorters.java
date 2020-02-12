@@ -7,7 +7,10 @@ package ru.cft.focus.util.sort;
  * Для последовательностей, об упорядоченности которых нет информации,
  * можно использовать quick sort.
  * */
-public class Sorters {
+public final class Sorters {
+    private Sorters() {
+    }
+
     public static <T> Sorter<T> insertionSorter() {
         return (list, comparator) -> {
             for (int i = 1; i < list.size(); i++) {
